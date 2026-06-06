@@ -14,6 +14,7 @@ build:
   skip: true  # [win]
   skip: true  # [py==313]
   skip: true  # [is_abi3 and not is_python_min]
+  skip: true  # [osx and x86_64]
   python_version_independent: true  # [is_abi3]
   entry_points:
     - deepmd-gnn = deepmd_gnn.cli:main
