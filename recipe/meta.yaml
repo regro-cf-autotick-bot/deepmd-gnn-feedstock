@@ -10,10 +10,11 @@ source:
   sha256: 79f142d0e30016c3fbae5fb33fdc2d1c6017b344734b256c9d7b831c5ccb0161
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   skip: true  # [py==313]
   skip: true  # [is_abi3 and not is_python_min]
+  skip: true  # [osx and x86_64]
   python_version_independent: true  # [is_abi3]
   entry_points:
     - deepmd-gnn = deepmd_gnn.cli:main
